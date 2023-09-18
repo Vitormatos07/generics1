@@ -1,12 +1,11 @@
 ﻿using System;
-using generics1;
-namespace Course
+namespace generics1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            PrintService printService = new PrintService();
+            PrintService<int> printService = new PrintService<int>();
 
             Console.Write("How many values? ");
             int n = int.Parse(Console.ReadLine());
